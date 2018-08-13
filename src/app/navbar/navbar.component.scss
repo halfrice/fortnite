@@ -1,4 +1,25 @@
-.company {
+.navi {
+  padding: 0px;
+  margin: 0px;
+}
+.navi-row {
+  padding: 0px;
+  margin: 0px;
+}
+.navi-link {
+  height: 100%;
   color: deeppink;
+  font-size: 1rem;
   text-decoration: none;
+  margin: 0px;
+}
+.navi-logo {
+
+}
+.navi-spacer {
+  flex: 1 1 auto;
+}
+.navi-login {
+  display: static;
+  right: 0;
 }

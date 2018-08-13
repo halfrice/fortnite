@@ -1,12 +1,16 @@
+// Modules
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppRoutingModule } from './app-routing.module';
+import { MaterialModule } from './material';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
+// Components
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
-import { MaterialModule } from './material';
+// Services
+import { NavlinksService } from './navbar/navlinks.service';
 
 @NgModule({
   declarations: [
@@ -19,7 +23,7 @@ import { MaterialModule } from './material';
     AppRoutingModule,
     MaterialModule
   ],
-  providers: [],
+  providers: [NavlinksService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
