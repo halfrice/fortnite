@@ -1,25 +1,25 @@
-.navi {
+.nav {
   padding: 0px;
   margin: 0px;
 }
-.navi-row {
+.nav-row {
   padding: 0px;
   margin: 0px;
 }
-.navi-link {
+.nav-link {
   height: 100%;
   color: deeppink;
   font-size: 1rem;
   text-decoration: none;
   margin: 0px;
+  min-width: 0px;
 }
-.navi-logo {
-
+.nav-logo {
 }
-.navi-spacer {
+.nav-spacer {
   flex: 1 1 auto;
 }
-.navi-login {
+.nav-login {
   display: static;
   right: 0;
 }

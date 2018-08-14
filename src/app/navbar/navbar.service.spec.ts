@@ -1,15 +1,15 @@
 import { TestBed, inject } from '@angular/core/testing';
 
-import { NavlinksService } from './navlinks.service';
+import { NavbarService } from './navbar.service';
 
 describe('NavlinksService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [NavlinksService]
+      providers: [NavbarService]
     });
   });
 
-  it('should be created', inject([NavlinksService], (service: NavlinksService) => {
+  it('should be created', inject([NavbarService], (service: NavbarService) => {
     expect(service).toBeTruthy();
   }));
 });

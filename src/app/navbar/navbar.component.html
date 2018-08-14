@@ -1,8 +1,8 @@
-<mat-toolbar color="primary" class="navi">
-  <mat-toolbar-row class="navi-row">
-    <button mat-button layout-align="end center" class="navi-link navi-logo">FORTNITE</button>
-    <button mat-button *ngFor="let l of navlinksService.getLinks()" class="navi-link">{{ l }}</button>
-    <span class="navi-spacer"></span>
-    <button mat-button class="navi-link navi-login">LOG-IN / SIGN-UP</button>
+<mat-toolbar color="primary" class="nav">
+  <mat-toolbar-row class="nav-row">
+    <button mat-button layout-align="end center" class="nav-link nav-logo">FORTNITE</button>
+    <button mat-button *ngFor="let link of navbarService.getLinks()" class="nav-link">{{ link }}</button>
+    <span class="nav-spacer"></span>
+    <button mat-button class="nav-link nav-login">LOG-IN / SIGN-UP</button>
   </mat-toolbar-row>
 </mat-toolbar>

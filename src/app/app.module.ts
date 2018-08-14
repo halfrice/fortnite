@@ -10,7 +10,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
 // Services
-import { NavlinksService } from './navbar/navlinks.service';
+import { NavbarService } from './navbar/navbar.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +23,7 @@ import { NavlinksService } from './navbar/navlinks.service';
     AppRoutingModule,
     MaterialModule
   ],
-  providers: [NavlinksService],
+  providers: [NavbarService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

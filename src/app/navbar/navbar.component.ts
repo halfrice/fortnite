@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { NavlinksService } from './navlinks.service';
+import { NavbarService } from './navbar.service';
 
 @Component({
   selector: 'app-navbar',
@@ -8,12 +8,12 @@ import { NavlinksService } from './navlinks.service';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-  navlinks: any;
+  links: any;
 
-  constructor(private navlinksService: NavlinksService) { }
+  constructor(private navbarService: NavbarService) { }
 
   ngOnInit() {
-    this.navlinks = this.navlinksService.getLinks();
+    this.links = this.navbarService.getLinks();
   }
 
 }
