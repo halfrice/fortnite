@@ -1,0 +1,62 @@
+
+.test {
+  border: 1px solid fuchsia;
+  // position: absolute;
+  right: 200;
+}
+.login-menu-container {
+  display: flex;
+  flex-direction: column;
+  // min-width: 360px;
+}
+.login-menu-container > * {
+  width: 100%;
+}
+.example-right-align {
+  text-align: right;
+}
+
+input.example-right-align::-webkit-outer-spin-button,
+input.example-right-align::-webkit-inner-spin-button {
+  display: none;
+}
+
+input.example-right-align {
+  -moz-appearance: textfield;
+}
+.login-username, .login-password {
+  display: flex;
+  padding: 0 1rem 0 1rem;
+}
+
+// Remember Me Radio Button
+.login-remember-me-group {
+  display: inline-flex;
+  flex-direction: column;
+  // border: 1px solid magenta;
+}
+.login-remember-me-button {
+  margin: 1em;
+}
+.example-selected-value {
+  margin: 15px 0;
+}
+
+// Submit Button
+.login-submit {
+  // border: 1px solid magenta;
+}
+
+.wtf {
+  border: 1px solid hotpink;
+  width: 24rem;
+}
+.form-full-width {
+  min-width: 420px;
+  max-width: 500px;
+  width:100%;
+}
+.input-full-width {
+  min-width: 300px;
+  width:800px;
+}
