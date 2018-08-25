@@ -1,9 +1,13 @@
 <mat-toolbar color="primary" class="nav">
   <mat-toolbar-row class="nav-row">
-    <span class="temp">
-      <mat-icon matSuffix class="nav-logo-icon">all_inclusive</mat-icon>
-      <button mat-button layout-align="end center" class="nav-link nav-logo">FORTNITE</button>
-    </span>
+    <!-- <span class="temp"> -->
+      <button mat-button layout-align="end center" class="nav-link nav-logo">
+        <mat-icon matSuffix class="nav-logo-icon">all_inclusive</mat-icon>
+        <span class="nav-logo-text">
+        FORTNITE
+        </span>
+      </button>
+    <!-- </span> -->
     <button mat-button *ngFor="let link of navbarService.getLinks()" class="nav-link">
       {{ link | uppercase }}
     </button>

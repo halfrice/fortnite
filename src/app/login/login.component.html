@@ -10,29 +10,33 @@
     <mat-form-field appearance="outline" class="login-username">
       <mat-label>Username</mat-label>
       <input matInput
-        (click)="$event.stopPropagation()"
         [formControl]="email"
-        class="input-full-width"
+        class=""
         placeholder="Choose Wisley"
         required>
+      <mat-icon matSuffix>
+        <!-- {{!taken ? '' : 'book'}} -->
+      </mat-icon>
       <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
     </mat-form-field>
     <mat-form-field class="login-password" appearance="outline">
       <mat-label>Password</mat-label>
       <input matInput
-        (click)="$event.stopPropagation()"
         [type]="hide ? 'password' : 'text'"
         placeholder="dadada1">
       <mat-icon matSuffix (click)="hide = !hide">
-        {{hide ? 'visibility' : 'visibility_off'}}
+        <!-- {{hide ? 'visibility' : 'visibility_off'}} -->
+        {{hide ? '' : 'visibility_off'}}
       </mat-icon>
     </mat-form-field>
   </div>
-  <mat-radio-group class="login-remember-me-group">
-    <mat-radio-button value="1" (click)="$event.stopPropagation()" class="login-remember-me-button">
+  <mat-radio-group class="login-remember-me-group" (click)="$event.stopPropagation()">
+    <mat-radio-button value="1" class="login-remember-me-button">
       Remember Me
     </mat-radio-button>
   </mat-radio-group>
-  <button mat-menu-item color="accent" class="login-submit">Submit</button>
+  <div>
+    <button mat-stroked-button color="accent" class="login-submit">Submit</button>
+  </div>
   <!-- <button mat-menu-item class="login-submit">Submit</button> -->
 </mat-menu>

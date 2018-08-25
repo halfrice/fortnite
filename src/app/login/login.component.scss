@@ -36,7 +36,7 @@ input.example-right-align {
   // border: 1px solid magenta;
 }
 .login-remember-me-button {
-  margin: 1em;
+  margin: 0 1rem 0.5rem;
 }
 .example-selected-value {
   margin: 15px 0;
@@ -44,17 +44,15 @@ input.example-right-align {
 
 // Submit Button
 .login-submit {
-  // border: 1px solid magenta;
+  margin: 1rem 1rem 0;
+  size: 1rem;
+  // border: 1px solid #ddd;
+  // background: #aaa;
 }
 
 .wtf {
   border: 1px solid hotpink;
   width: 24rem;
-}
-.form-full-width {
-  min-width: 420px;
-  max-width: 500px;
-  width:100%;
 }
 .input-full-width {
   min-width: 300px;

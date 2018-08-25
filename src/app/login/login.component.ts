@@ -12,11 +12,13 @@ import { LoginService } from './login.service';
   ]
 })
 export class LoginComponent implements OnInit {
+  username = false;
   hide = true;
 
   constructor(private loginService: LoginService) { }
 
   ngOnInit() {
+    this.username = false;
     this.hide = true;
   }
 
@@ -24,8 +26,12 @@ export class LoginComponent implements OnInit {
 
   getErrorMessage() {
     return this.email.hasError('required') ? 'You must enter a value' :
-        this.email.hasError('email') ? 'Not a valid email' :
-            '';
+      this.email.hasError('email') ? 'Not a valid email' : '';
+  }
+
+  checkUsername(username): boolean {
+    // query server for username
+    return username
   }
 
 }

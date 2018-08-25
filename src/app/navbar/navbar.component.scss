@@ -25,12 +25,16 @@
   align-items: center;
 }
 .nav-logo-icon {
+  // border: 1px solid greenyellow;
   color: deeppink;
   margin: 0 0 0 1rem;
 }
 .nav-logo {
   // border: 1px solid green;
   padding-left: 0.3rem;
+}
+.nav-logo-text {
+  // border: 1px solid red;
 }
 
 // Spacer after links which extends to the nav-login (if needed - TODO)
